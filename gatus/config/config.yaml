@@ -1,0 +1,26 @@
+# FILL IN THE MISSING VALUES BELOW
+alerting:
+  github:
+    token: "<github-token>" # WARN: DO NOT CHANGE THIS LINE
+# FILL IN THE MISSING VALUES ABOVE
+
+# FILL IN THE MISSING VALUES BELOW
+endpoints:
+  - name: Leantime
+    url: http://lks-oss-lb-1563050410.us-east-1.elb.amazonaws.com # WARN: DO NOT CHANGE THIS LINE
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+    alerts:
+      - type: github
+        description: "Sensei, Leantime is down! Please check and fix it."
+
+  - name: Gatus
+    url: http://lks-oss-lb-1563050410.us-east-1.elb.amazonaws.com # WARN: DO NOT CHANGE THIS LINE
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+    alerts:
+      - type: github
+        description: "Sensei, Gatus is down! Please check and fix it."
+# FILL IN THE MISSING VALUES BELOW
