@@ -1,4 +1,7 @@
 # FILL IN THE MISSING VALUES BELOW
+ui:
+  path: /gatus
+
 alerting:
   github:
     token: "<github-token>" # WARN: DO NOT CHANGE THIS LINE
@@ -18,7 +21,7 @@ endpoints:
         description: "Sensei, Leantime is down! Please check and fix it."
 
   - name: Gatus
-    url: http://lks-oss-lb-1563050410.us-east-1.elb.amazonaws.com:8080 # WARN: DO NOT CHANGE THIS LINE
+    url: http://lks-oss-lb-1563050410.us-east-1.elb.amazonaws.com/gatus # WARN: DO NOT CHANGE THIS LINE
     interval: 1m
     conditions:
       - "[STATUS] == 200"
