@@ -29,4 +29,3 @@ endpoints:
     alerts:
       - type: github
         description: "Sensei, Gatus is down! Please check and fix it."
-# FILL IN THE MISSING VALUES BELOW
