@@ -16,7 +16,7 @@ env:
 
   ECS_GATUS_SERVICE: gatus-service
   GATUS_TASK_DEFINITION: ./gatus/task-definition.json
-  GATUS_URL: "http://${{ secrets.ALB_ENDPOINT }}:8080"
+  GATUS_URL: "http://${{ secrets.ALB_ENDPOINT }}/gatus"
   
 
 permissions:
