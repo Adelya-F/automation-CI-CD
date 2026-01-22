@@ -1,7 +1,9 @@
 # FILL IN THE MISSING VALUES BELOW
-ui:
-  path: /gatus
-
+web:
+  address: 0.0.0.0
+  port: 8080
+  base-path: /gatus
+  
 alerting:
   github:
     token: "<github-token>" # WARN: DO NOT CHANGE THIS LINE
